@@ -12,9 +12,9 @@
   <header class="header">
     <div class="navigation">
       <nav>главная</nav>
-      <img class="dot" src="images/list_marker.png">
+      <img class="dot" src="images/list_marker.png" alt=".">
       <a href="#">посмотреть лоты</a>
-      <img class="dot" src="images/list_marker.png">
+      <img class="dot" src="images/list_marker.png" alt=".">
       <a href="#">об аукционе</a>
     </div>
     <img class="logo" src="images/logo-black.svg" alt="Логотип"> 
@@ -27,9 +27,9 @@
   <body>
   <section class="hero">
     <div class="hero__title">
-      <span class="auction-hero__word auction-hero__word--one">ОНО</span>
-      <span class="auction-hero__word auction-hero__word--two">ТЕБЕ</span>
-      <span class="auction-hero__word auction-hero__word--three">НАДО</span>
+      <span class="auction-hero__word auction-hero__word--ono">ОНО</span>
+      <span class="auction-hero__word auction-hero__word--tebe">ТЕБЕ</span>
+      <span class="auction-hero__word auction-hero__word--nado">НАДО</span>
     </div>
     <div class="afterline">
   <p class="hero__subtitle">
@@ -43,23 +43,28 @@
 <main class="main">
   <h1 class="main_title">ЛОТЫ</h1>
   <div class="card-grid">
-    <div class="card card_type_film">
-      <h2 class="card-title">фильм режиссера, который бросил киношколу</h2>
-      <p class="card-content">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-    </div>
-    <div class="card card_type_book">
-      <h2 class="card-title">книга, где описан один скучный день из жизни рекламного агента</h2>
-      <p class="card-content">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-    </div>
-    <div class="card card_type_paint">
-      <h2 class="card-title">картина, которую повторит даже 5-летний сын маминой подруги</h2>
-      <p class="card-content">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-    </div>
+    <a class="card-link" href="#">
+      <div class="card card_type_film">
+        <h2 class="card-title">фильм режиссера, который бросил киношколу</h2>
+        <p class="card-content">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+      </div>
+    </a>
+    <a class="card-link" href="#">
+      <div class="card card_type_book">
+        <h2 class="card-title">книга, где описан один скучный день из жизни рекламного агента</h2>
+        <p class="card-content">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+      </div>
+    </a>
+    <a class="card-link" href="#">
+      <div class="card card_type_paint">
+        <h2 class="card-title">картина, которую повторит даже 5-летний сын маминой подруги</h2>
+        <p class="card-content">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+      </div>
+    </a>
   </div>
 <a class="ad" href="#">посмотреть больше</a>
-</main>
 <div class="about">
-  <img class="logo_about" src="../ono-tebe-nado-fd/images/logo-column.png">
+  <img class="logo_about" src="../ono-tebe-nado-fd/images/logo-column.png" alt="логотип проекта">
   <div>
     <h1 class="title_about">об аукционе</h1>
     <p class="about_content">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
@@ -80,15 +85,16 @@
   </div>
   <div class="channel">
   <a class="social-button" href="https://youtube.com" aria-label="YouTube">
-    <img src="./images/yt.svg">
+    <img src="./images/yt.svg" alt="youtube">
   </a>
   <a class="social-button" href="https://vk.com" aria-label="ВКонтакте">
-    <img src="./images/vk.svg">
+    <img src="./images/vk.svg" alt="вконтакте">
   </a>
   <a class="social-button" href="https://pinterest.com" aria-label="Pinterest">
-    <img src="./images/pinterest.svg">
+    <img src="./images/pinterest.svg" alt="pinterest">
   </a>
 </div>
+</main>
 </footer>
   </body>
 </html>
