@@ -1,1 +1,305 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  width: 1100px;
+  height: 293px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 391px;
+  height: 22px;
+  margin: 133px 36px 138px 50px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  margin-top: 6px;
+}
+
+.logo {
+width: 148px;
+height: 105px;
+margin: 92px 184px 96px 0px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 95px 50px 100px 0px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+   url('../images/cover.jpg');
+  background-position: center;
+  background-size: auto;
+  height: 757px;
+  width: 1100px;
+  background-size: 125% auto;
+  position: relative
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115%;
+  color: #fff;
+  letter-spacing: 30%;
+  margin-left: 50px;
+  position: relative;
+}
+
+.auction-hero__word {
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.auction-hero__word--one {
+  top: 165px;
+}
+
+.auction-hero__word--two {
+top: 300px;
+left: 330px;
+}
+
+.auction-hero__word--three {
+  top: 435px;
+  right: 20px;
+}
+
+.afterline {
+  display: flex;
+  max-width: 1000px;
+  height: 51px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+}
+
+.hero__subtitle {
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 85%;
+  text-transform: uppercase;
+  font-family: 'raleway' sans-serif;
+  font-weight: 400;
+}
+
+.hero__button {
+  padding: 12px 32px 11px 31px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'raleway' sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.hero__button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.main {
+  margin: 187px 24px 30px 24px;
+  width: 1052px;
+  height: 723px;
+}
+
+.main_title {
+  width: 121px;
+  height: 47;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 1;
+  margin: 0px 891px 0px 40px;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1052px;
+  gap: 25px;
+  margin: 27px 25px 0px 0px;
+  height: 596px;
+}
+
+.card_type_film {
+  width: 334px;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/card-lot-01.jpg);
+  background-position: -120px center;
+  background-size: 170% auto;
+}
+
+.card_type_book {
+  width: 334px;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/card-lot-02.jpg);
+  background-position: -120px center;
+  background-size: 170% auto;
+}
+
+.card_type_paint {
+  width: 334px;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/card-lot-03.jpg);
+  background-position: -120px center;
+  background-size: 170% auto;
+}
+
+.card-title {
+  font-family: 'Raleway', sans-serif;
+  font-style: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 40px auto 40px;
+}
+
+.card-content {
+  color: #fff;
+  margin: auto 40px 48px 40px;
+  font-family: 'raleway';
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.ad {
+  display: block;
+  margin-left: 64px;
+  margin-top: 0px;
+  font-family: "raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 820px 0px 40px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0px;
+  width: 1052px;
+  height: 595px;
+  margin: 112px 24px 180px 24px;
+}
+
+.logo_about {
+  width: 240px;
+  height: 240px;
+  margin: 35px 0px 320px 47px;
+}
+
+.title_about {
+margin: 136px 402px 100px 6px;
+font-family: 'raleway', sans-serif;
+font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.about_content {
+  font-family: 'raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px 5px 0px 6px;
+
+}
+
+.part_two {
+  margin-top: 24px;
+}
+
+.footer {
+  display: flex;
+  width: 1100px;
+  height: 180px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 265px;
+  height: 98px;
+  line-height: 24px;
+}
+
+.navigation_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 100%;
+  margin-right: 23px;
+  margin-top: 6px;
+}
+
+.channel {
+  display: flex;
+  gap: 48px;
+  margin-top: 0;
+}
+
+.social-button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.social-button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.55);
+}
