@@ -5,15 +5,14 @@
   font-size: 18px;
   line-height: 100%;
   width: 1100px;
-  margin-bottom: -3px;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   width: 391px;
-  margin: 133px 36px 138px 50px;
-  transform: translateY(2px);
+  margin: 136px 36px 138px 50px;
+  line-height: 1;
 }
 
 .dot {
@@ -22,7 +21,7 @@
 
 .navigation ul {
   display: flex;
-  gap: 23px;
+  gap: 18px;
   padding-left: 0px;
 }
 
@@ -31,16 +30,19 @@
   white-space: nowrap;
 }
 
-.glavnaya {
+.no-dot {
   list-style: none;
   text-decoration: none;
-  padding-right: 10px;
+}
+
+.overmaina {
+  text-decoration: none;
 }
 
 .logo {
 width: 148px;
 height: 105px;
-margin: 92px 184px 96px 0px;
+margin: 92px 184px 93px 0px;
 }
 
 .contacts {
@@ -51,24 +53,29 @@ margin: 92px 184px 96px 0px;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
-  transform: translateY(1px);
-  transform: translateX(2px);
+  transform: translate(2px, 1px);
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-   url('../images/cover.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/cover.jpg');
   background-position: center;
-  height: 757px;
+  min-height: 757px;
   width: 1100px;
   background-size: 125% auto;
-  position: relative;
 }
 
 .hero__title {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 1100px;
+  padding: 165px 20px 0 50px;
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 100px;
@@ -76,41 +83,34 @@ margin: 92px 184px 96px 0px;
   line-height: 115%;
   color: #fff;
   letter-spacing: 0.3em;
-  margin-left: 50px;
-  position: relative;
 }
 
 .auction-hero__word {
   display: block;
-  position: absolute;
+  width: 100%;
   white-space: nowrap;
 }
 
-.auction-hero__word--ono {
-  top: 165px;
+.auction-hero__word--meet {
+  text-align: left;
 }
 
-.auction-hero__word--tebe {
-top: 300px;
-left: 330px;
+.auction-hero__word--ongoing {
+  text-align: center;
 }
 
-.auction-hero__word--nado {
-  top: 435px;
-  right: 20px;
+.auction-hero__word--bye {
+  text-align: right;
 }
 
 .afterline {
   display: flex;
+  width: calc(100% - 100px);
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 50px 50px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  position: absolute;
-  right: 50px;
-  bottom: 50px;
-  left: 50px;
 }
 
 .hero__subtitle {
@@ -160,6 +160,10 @@ left: 330px;
   display: flex;
   flex-direction: column;
   min-height: 596px;
+  width: 334px;
+  background-position: -120px center;
+  background-size: 170% auto;
+  background-repeat: no-repeat;
 }
 
 .card-grid {
@@ -171,33 +175,18 @@ left: 330px;
 }
 
 .card_type_film {
-  width: 334px;
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url(../images/card-lot-01.jpg);
-  background-position: -120px center;
-  background-size: 170% auto;
 }
 
 .card_type_book {
-  width: 334px;
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url(../images/card-lot-02.jpg);
-  background-position: -120px center;
-  background-size: 170% auto;
 }
 
 .card_type_paint {
-  width: 334px;
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url(../images/card-lot-03.jpg);
-  background-position: -120px center;
-  background-size: 170% auto;
-}
-
-.card_type_film,
-.card_type_book,
-.card_type_paint {
-  background-repeat: no-repeat;
 }
 
 .card-link {
@@ -309,9 +298,7 @@ text-transform: uppercase;
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 100%;
   margin-right: 23px;
-  margin-top: 6px;
 }
 
 .channel {

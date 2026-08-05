@@ -12,12 +12,12 @@
   <header class="header">
       <nav class="navigation">
         <ul class="dot">
-          <a class="glavnaya" href="#mpage">главная</a>
-          <li><a href="#lotsc">посмотреть лоты</a></li>
-          <li><a href="#auction">об аукционе</a></li>
+          <li class="no-dot"><a class="overmaina" href="#mpage">главная</a></li>
+          <li><a class="over" href="#lotsc">посмотреть лоты</a></li>
+          <li><a class="over" href="#auction">об аукционе</a></li>
           </ul>
       </nav>
-    <a><img class="logo" src="images/logo-black.svg" alt="Логотип"></a> 
+    <a href="#"><img class="logo" src="images/logo-black.svg" alt="Логотип"></a> 
     <address class="contacts">
       <a href="tel:+99995555555">+9 999 555 5555</a>
       <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -25,11 +25,12 @@
     </address>
   </header>
   <body>
+    <main>
   <section class="hero">
     <h1 class="hero__title">
-      <span class="auction-hero__word auction-hero__word--ono">ОНО</span>
-      <span class="auction-hero__word auction-hero__word--tebe">ТЕБЕ</span>
-      <span class="auction-hero__word auction-hero__word--nado">НАДО</span>
+      <span class="auction-hero__word auction-hero__word--meet">ОНО</span>
+      <span class="auction-hero__word auction-hero__word--ongoing">ТЕБЕ</span>
+      <span class="auction-hero__word auction-hero__word--bye">НАДО</span>
     </h1>
     <div class="afterline">
   <p class="hero__subtitle">
@@ -40,7 +41,7 @@
   </a>
 </div>
 </section>
-<main class="main">
+<section class="main">
   <h2 class="main_title">ЛОТЫ</h2>
   <div class="card-grid">
     <a class="card-link" href="#">
@@ -78,9 +79,9 @@
       <p>наб. Принсенграхт 263-265, Амстердам</p>
   </address>
   <div class="navigation_footer">
-    <a class="mp" href="#mpage">главная</a>
-    <a href="#lotsc">посмотреть лоты</a>
-    <a href="#auction">об аукционе</a>
+    <a class="mp over" href="#mpage">главная</a>
+    <a class="over" href="#lotsc">посмотреть лоты</a>
+    <a class="over" href="#auction">об аукционе</a>
   </div>
   <div class="channel">
   <a class="social-button" href="https://youtube.com" aria-label="YouTube">
@@ -94,6 +95,6 @@
   </a>
 </div>
 </main>
+</body>
 </footer>
-  </body>
 </html>
