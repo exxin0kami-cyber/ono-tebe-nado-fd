@@ -237,7 +237,7 @@ margin: 92px 184px 93px 0px;
   grid-template-columns: 1fr 2fr;
   gap: 0;
   width: 1052px;
-  margin: 119px 24px 180px 3px;
+  margin: 119px 24px 180px 27px;
 }
 
 .logo_about {
@@ -278,7 +278,7 @@ text-transform: uppercase;
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
-  transform: translate(-24px, 1px);
+  transform: translatey(1px);
 }
 
 .contacts_footer {
